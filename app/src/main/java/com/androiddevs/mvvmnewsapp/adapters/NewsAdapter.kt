@@ -3,6 +3,8 @@ package com.androiddevs.mvvmnewsapp.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -13,6 +15,7 @@ import kotlinx.android.synthetic.main.item_article_preview.view.*
 
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
 
+    var lastPosition = -1
     inner class ArticleViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 
     private val differCallback = object : DiffUtil.ItemCallback<Article>() {
@@ -56,10 +59,21 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
                 onItemClickListener?.let { it(article) }
             }
         }
+
+        setAnimation(holder.itemView, position)
     }
 
     fun setOnItemClickListener(listener: (Article) -> Unit) {
         onItemClickListener = listener
+    }
+
+    fun setAnimation(viewToAnimate: View, position: Int){
+        if (position>lastPosition) {
+            val anim =
+                AnimationUtils.loadAnimation(viewToAnimate.context, R.anim.slide_in_right)
+            viewToAnimate.startAnimation(anim)
+            lastPosition = position
+        }
     }
 }
 
