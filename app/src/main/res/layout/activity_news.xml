@@ -13,14 +13,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/flheadingNews"
+        android:background="@drawable/heading_bg"
        >
 
         <TextView
             android:id="@+id/tvNewsHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="About"
-            android:textSize="40sp"
+            android:text="MVVM NewsApp"
+            android:textSize="30sp"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
             android:textColor="#FFFFFF"
