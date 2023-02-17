@@ -17,12 +17,12 @@ This is a an app built using `Kotlin` .
 
 
 ## Gallery:
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/110724849/219089214-a6ff1259-8d8e-4933-a386-fe0132946da0.png"  /></kbd>
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/110724849/219089380-13d16667-99b9-43c6-8e6d-51c3d4211e33.png"  /></kbd>
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/110724849/219089417-699229bc-ee5d-478a-8b7a-25a30dcc2dc6.png"  /></kbd>
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/110724849/219089458-3f65de5a-e930-4a33-b6fc-56b180a33a67.png"  /></kbd>
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/110724849/219089495-6533a61c-1af3-45a0-a4bd-c5576d45e4b9.png"  /></kbd>
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/110724849/219089535-10e4e3db-b073-4162-92b2-32ba4632dd95.png"  /></kbd>
+<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718327-119c7a06-dedf-4d9c-9654-d72f0d3a89de.jpg"  /></kbd>
+<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718339-2642f483-a05a-4af7-94be-406595564134.jpg"  /></kbd>
+<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718313-ee43643e-cd65-4603-acec-f5725bb6de58.jpg"  /></kbd>
+<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718293-be6c464d-ff65-432b-abc7-13d22997583c.jpg"  /></kbd>
+<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718239-6a7ef2cf-68ab-4b82-ad52-44fc1f3eb7dc.jpg"  /></kbd>
+<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718214-942dc69a-c478-4252-93f5-2c7b36c37a1f.jpg"  /></kbd>
 
 
 
