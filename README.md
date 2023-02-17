@@ -4,7 +4,7 @@ MVVM NewsApp is a NewsApp which fetches the Real-time news fro top news-outlets 
 This is a an app built using `Kotlin` .
 
 ## Download and Try here:
-[![Download zip](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download zip")]([https://github.com/DenverCoder1/readme-download-button-action/archive/1.0.1.zip](https://drive.google.com/file/d/1qf-zGXq8qHITQcTtmf8eJ75tzi7gChHK/view?usp=share_link))
+[![Download zip](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download zip")]((https://drive.google.com/file/d/1qf-zGXq8qHITQcTtmf8eJ75tzi7gChHK/view?usp=share_link))
 
 ## Features:
 1) Real-Time News Updates.
