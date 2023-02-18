@@ -8,17 +8,24 @@
     <application
         android:name=".NewsApplication"
         android:allowBackup="true"
-        android:icon="@drawable/img"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/img"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.NewsActivity">
+        <activity
+            android:name=".ui.Splash"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
+        </activity>
+        <activity android:name=".ui.NewsActivity"
+            android:exported="false">
         </activity>
     </application>
 
