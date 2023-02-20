@@ -28,6 +28,13 @@ This is a an app built using `Kotlin` .
 https://user-images.githubusercontent.com/85965606/220061989-11f745d2-7bfd-43d6-818d-21b73724b150.mp4
 
 
+## Our Amazing Contributors 👨‍👨‍👦‍👦❤️
+Thanks to all the contributors who worked for this project to stay alive! 😊😎
+
+<a align="center" href="https://github.com/aniketsen123/Mvvm_newsapp/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=aniketsen123/Mvvm_newsapp&&max=817" />  
+</a>
+
 
 ---
 <div align="center">
