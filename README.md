@@ -25,15 +25,7 @@ This is a an app built using `Kotlin` .
 <kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718214-942dc69a-c478-4252-93f5-2c7b36c37a1f.jpg"  /></kbd>
 
 
-
-https://user-images.githubusercontent.com/111181465/217274476-70f3fe88-4789-4edb-bea4-db187ece7a11.mp4
-
-
-
-
-
-
-
+https://user-images.githubusercontent.com/85965606/220061989-11f745d2-7bfd-43d6-818d-21b73724b150.mp4
 
 
 
