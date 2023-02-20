@@ -1,5 +1,5 @@
 # <p align="center">𝑴𝑽𝑽𝑴 𝑵𝒆𝒘𝒔𝑨𝒑𝒑</P>
-## What is MVVVM NewsApp?
+## 📃 What is MVVVM NewsApp?
 MVVM NewsApp is a NewsApp which fetches the Real-time news fro top news-outlets and also enables *Saving* and *Search* feature.
 This is a an app built using `Kotlin` .
 
@@ -7,12 +7,15 @@ This is a an app built using `Kotlin` .
 [![Download zip](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download zip")](https://drive.google.com/file/d/1qf-zGXq8qHITQcTtmf8eJ75tzi7gChHK/view?usp=share_link)
 
 ## Features:
+
+```
 1) Real-Time News Updates.
 2) NEWS feed from top news outlets.
 3) Saving / Like NEWS Feature. 
 4) Search NEWS Feature.
 5) Thumbnailed NEWS feed for better Visualization.
 6) Timeline.
+```
 
 
 
