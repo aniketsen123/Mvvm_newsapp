@@ -28,6 +28,14 @@ This is a an app built using `Kotlin` .
 https://user-images.githubusercontent.com/85965606/220061989-11f745d2-7bfd-43d6-818d-21b73724b150.mp4
 
 
+
+## 👩🏽‍💻 Contribution
+
+- Contributions make the open source community such an amazing place to learn, inspire, and create.
+- Any contributions you make are greatly appreciated.
+
+<br>
+
 ## Our Amazing Contributors 👨‍👨‍👦‍👦❤️
 Thanks to all the contributors who worked for this project to stay alive! 😊😎
 
