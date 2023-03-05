@@ -15,4 +15,9 @@
         <item name="colorAccent">#F44336</item>
     </style>
 
+    <style name="progressBarStyle" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+    </style>
+
+
+
 </resources>

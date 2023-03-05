@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.item_article_preview.view.*
 
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
 
+
     var lastPosition = -1
     inner class ArticleViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 
