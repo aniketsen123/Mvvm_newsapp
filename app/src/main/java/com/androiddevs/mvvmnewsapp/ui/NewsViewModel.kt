@@ -33,6 +33,7 @@ class NewsViewModel(
     var oldSearchQuery:String? = null
 
 
+
     init {
         getBreakingNews("us")
     }
@@ -84,6 +85,7 @@ class NewsViewModel(
         return Resource.Error(response.message())
     }
 
+
     fun saveArticle(article: Article) = viewModelScope.launch {
         newsRepository.upsert(article)
     }
@@ -112,6 +114,9 @@ class NewsViewModel(
         }
     }
 
+
+
+
     private suspend fun safeBreakingNewsCall(countryCode: String) {
         breakingNews.postValue(Resource.Loading())
         try {
@@ -128,6 +133,8 @@ class NewsViewModel(
             }
         }
     }
+
+
 
     private fun hasInternetConnection(): Boolean {
         val connectivityManager = getApplication<NewsApplication>().getSystemService(
