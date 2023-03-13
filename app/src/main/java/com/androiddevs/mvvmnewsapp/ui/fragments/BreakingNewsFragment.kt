@@ -1,9 +1,16 @@
 package com.androiddevs.mvvmnewsapp.ui.fragments
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
+import android.view.View.OnClickListener
+import android.view.ViewGroup
 import android.widget.AbsListView
+import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -12,10 +19,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.androiddevs.mvvmnewsapp.R
 import com.androiddevs.mvvmnewsapp.adapters.NewsAdapter
+import com.androiddevs.mvvmnewsapp.api.RetrofitInstance.Companion.api
 import com.androiddevs.mvvmnewsapp.ui.NewsActivity
 import com.androiddevs.mvvmnewsapp.ui.NewsViewModel
 import com.androiddevs.mvvmnewsapp.util.Constants.Companion.QUERY_PAGE_SIZE
 import com.androiddevs.mvvmnewsapp.util.Resource
+import com.bumptech.glide.RequestManager
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.android.synthetic.main.fragment_breaking_news.*
 import kotlinx.android.synthetic.main.item_error_message.*
 
@@ -28,6 +38,7 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         viewModel = (activity as NewsActivity).viewModel
         setupRecyclerView()
 
@@ -70,6 +81,13 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
 
         btnRetry.setOnClickListener {
             viewModel.getBreakingNews("us")
+        }
+
+
+        live.setOnClickListener {
+            val uri = Uri.parse("https://www.aajtak.in/livetv")
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
         }
     }
 
