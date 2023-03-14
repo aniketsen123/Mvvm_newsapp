@@ -11,8 +11,6 @@
         android:id="@+id/scroll_indicator"
         android:orientation="vertical">
 
-
-
         <ProgressBar
             android:id="@+id/scroll_progress"
             android:layout_width="match_parent"
