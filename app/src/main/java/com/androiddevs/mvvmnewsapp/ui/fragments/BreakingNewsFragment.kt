@@ -23,6 +23,7 @@ import com.androiddevs.mvvmnewsapp.api.RetrofitInstance.Companion.api
 import com.androiddevs.mvvmnewsapp.ui.NewsActivity
 import com.androiddevs.mvvmnewsapp.ui.NewsViewModel
 import com.androiddevs.mvvmnewsapp.util.Constants.Companion.QUERY_PAGE_SIZE
+import com.androiddevs.mvvmnewsapp.util.Constants.Companion.category_business
 import com.androiddevs.mvvmnewsapp.util.Resource
 import com.bumptech.glide.RequestManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -52,6 +53,8 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
             )
         }
 
+
+
         viewModel.breakingNews.observe(viewLifecycleOwner, Observer { response ->
             when(response) {
                 is Resource.Success -> {
@@ -61,7 +64,8 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
                         newsAdapter.differ.submitList(newsResponse.articles.toList())
                         val totalPages = newsResponse.totalResults / QUERY_PAGE_SIZE + 2
                         isLastPage = viewModel.breakingNewsPage == totalPages
-                        if(isLastPage) {
+                        if(isLastPage)
+                        {
                             rvBreakingNews.setPadding(0, 0, 0, 0)
                         }
                     }
@@ -82,8 +86,6 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
         btnRetry.setOnClickListener {
             viewModel.getBreakingNews("us")
         }
-
-
         live.setOnClickListener {
             val uri = Uri.parse("https://www.aajtak.in/livetv")
             val intent = Intent(Intent.ACTION_VIEW, uri)

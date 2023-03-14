@@ -6,6 +6,7 @@ import android.net.ConnectivityManager
 import android.net.ConnectivityManager.*
 import android.net.NetworkCapabilities.*
 import android.os.Build
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
@@ -20,12 +21,15 @@ import retrofit2.Response
 
 class NewsViewModel(
     app: Application,
-    val newsRepository: NewsRepository
+    val newsRepository: NewsRepository,
+    val TAG: String = "NewsviewModel"
 ) : AndroidViewModel(app) {
 
     val breakingNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     var breakingNewsPage = 1
     var breakingNewsResponse: NewsResponse? = null
+    val categorynews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
+    var categorynewsPage = 1
     val searchNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     var searchNewsPage = 1
     var searchNewsResponse: NewsResponse? = null
@@ -37,6 +41,7 @@ class NewsViewModel(
     init {
         getBreakingNews("us")
     }
+
 
     fun getBreakingNews(countryCode: String) = viewModelScope.launch {
         safeBreakingNewsCall(countryCode)
@@ -114,8 +119,22 @@ class NewsViewModel(
         }
     }
 
-
-
+    private suspend fun safecategoryNewsCall(catetory: String) {
+        categorynews.postValue(Resource.Loading())
+        try {
+            if(hasInternetConnection()) {
+                val response = newsRepository.getBreakingNews(catetory, categorynewsPage)
+                categorynews.postValue(handleBreakingNewsResponse(response))
+            } else {
+                categorynews.postValue(Resource.Error("No internet connection"))
+            }
+        } catch(t: Throwable) {
+            when(t) {
+                is IOException -> categorynews.postValue(Resource.Error("Network Failure"))
+                else -> categorynews.postValue(Resource.Error("Conversion Error"))
+            }
+        }
+    }
 
     private suspend fun safeBreakingNewsCall(countryCode: String) {
         breakingNews.postValue(Resource.Loading())
