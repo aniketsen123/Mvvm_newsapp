@@ -23,7 +23,6 @@ import com.androiddevs.mvvmnewsapp.api.RetrofitInstance.Companion.api
 import com.androiddevs.mvvmnewsapp.ui.NewsActivity
 import com.androiddevs.mvvmnewsapp.ui.NewsViewModel
 import com.androiddevs.mvvmnewsapp.util.Constants.Companion.QUERY_PAGE_SIZE
-import com.androiddevs.mvvmnewsapp.util.Constants.Companion.category_business
 import com.androiddevs.mvvmnewsapp.util.Resource
 import com.bumptech.glide.RequestManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -86,6 +85,31 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
         btnRetry.setOnClickListener {
             viewModel.getBreakingNews("us")
         }
+
+        btn_1. setOnClickListener {
+        viewModel. getNewsByCategory ("business")
+    }
+
+        btn_2. setOnClickListener {
+            viewModel. getNewsByCategory ("entertaintment")
+        }
+        btn_3. setOnClickListener {
+            viewModel. getNewsByCategory ("general")
+        }
+        btn_4. setOnClickListener {
+            viewModel. getNewsByCategory ("health")
+        }
+        btn_5. setOnClickListener {
+            viewModel. getNewsByCategory ("science")
+        }
+        btn_6. setOnClickListener {
+            viewModel. getNewsByCategory ("sports")
+        }
+
+        btn_7. setOnClickListener {
+            viewModel. getNewsByCategory ("technology")
+        }
+
         live.setOnClickListener {
             val uri = Uri.parse("https://www.aajtak.in/livetv")
             val intent = Intent(Intent.ACTION_VIEW, uri)

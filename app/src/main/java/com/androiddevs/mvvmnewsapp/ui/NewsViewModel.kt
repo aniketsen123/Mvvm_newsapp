@@ -30,6 +30,7 @@ class NewsViewModel(
     var breakingNewsResponse: NewsResponse? = null
     val categorynews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     var categorynewsPage = 1
+    var handleNewsResponse: NewsResponse? = null
     val searchNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     var searchNewsPage = 1
     var searchNewsResponse: NewsResponse? = null
@@ -51,6 +52,9 @@ class NewsViewModel(
         safeSearchNewsCall(searchQuery)
     }
 
+    fun getNewsByCategory (category: String) = viewModelScope.launch {
+        safeCategoryNewsCall(category)  }
+
     private fun handleBreakingNewsResponse(response: Response<NewsResponse>) : Resource<NewsResponse> {
         if(response.isSuccessful) {
             response.body()?.let { resultResponse ->
@@ -63,6 +67,23 @@ class NewsViewModel(
                     oldArticles?.addAll(newArticles)
                 }
                 return Resource.Success(breakingNewsResponse ?: resultResponse)
+            }
+        }
+        return Resource.Error(response.message())
+    }
+
+    private fun handleNewsResponse(response: Response<NewsResponse>) : Resource<NewsResponse> {
+        if(response.isSuccessful) {
+            response.body()?.let { resultResponse ->
+                categorynewsPage++
+                if(handleNewsResponse == null) {
+                    handleNewsResponse = resultResponse
+                } else {
+                    val oldArticles = handleNewsResponse?.articles
+                    val newArticles = resultResponse.articles
+                    oldArticles?.addAll(newArticles)
+                }
+                return Resource.Success(handleNewsResponse ?: resultResponse)
             }
         }
         return Resource.Error(response.message())
@@ -119,7 +140,7 @@ class NewsViewModel(
         }
     }
 
-    private suspend fun safecategoryNewsCall(catetory: String) {
+    private suspend fun safeCategoryNewsCall(catetory: String) {
         categorynews.postValue(Resource.Loading())
         try {
             if(hasInternetConnection()) {
