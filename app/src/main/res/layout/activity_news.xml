@@ -13,14 +13,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/flheadingNews"
-        android:background="@drawable/heading_bg"
-       >
+        android:background="@drawable/heading_bg">
 
         <TextView
             android:id="@+id/tvNewsHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MVVM NewsApp"
+            android:fontFamily="@font/productsans"
             android:textSize="30sp"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
