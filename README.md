@@ -52,12 +52,11 @@ This is a an app built using `Kotlin`                  </p>
 
 
 ## 📸 Gallery:
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718327-119c7a06-dedf-4d9c-9654-d72f0d3a89de.jpg"  /></kbd>
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718339-2642f483-a05a-4af7-94be-406595564134.jpg"  /></kbd>
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718313-ee43643e-cd65-4603-acec-f5725bb6de58.jpg"  /></kbd>
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718293-be6c464d-ff65-432b-abc7-13d22997583c.jpg"  /></kbd>
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718239-6a7ef2cf-68ab-4b82-ad52-44fc1f3eb7dc.jpg"  /></kbd>
-<kbd><img width="216" height="432" src="https://user-images.githubusercontent.com/85965606/219718214-942dc69a-c478-4252-93f5-2c7b36c37a1f.jpg"  /></kbd>
+![App screenshot 4](https://user-images.githubusercontent.com/91872944/225712946-698990ca-e486-45c7-a123-f059a7776310.jpeg)
+![App screenshot 3](https://user-images.githubusercontent.com/91872944/225712965-d6ce684a-6c07-4a08-bdf0-aeae47937023.jpeg)
+![App screenshot 2](https://user-images.githubusercontent.com/91872944/225712969-e5870e93-1861-43ad-b7e4-92e486a2f8f8.jpeg)
+![App screenshot 1](https://user-images.githubusercontent.com/91872944/225712973-9515a7c9-222b-46af-9731-ad2b64fb34ee.jpeg)
+
 
 
 ## 📽️ Demo Video 
