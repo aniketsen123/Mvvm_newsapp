@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.433"
-        app:srcCompat="@drawable/newsapp_icon" />
+        app:srcCompat="@drawable/newsapplogo" />
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
