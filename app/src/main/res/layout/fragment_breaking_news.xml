@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
+        android:layout_marginTop="70dp"
         android:paddingBottom="50dp"
         android:background="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,6 +31,100 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:id="@+id/btn_1"
+                android:text="business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/filter_btn_bg">
+
+            </Button>
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btn_2"
+                android:text="entertaintment"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_btn_bg">
+
+            </Button>
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btn_3"
+                android:text="general"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_btn_bg">
+
+            </Button>
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btn_4"
+                android:text="health"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_btn_bg">
+            </Button>
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btn_5"
+                android:text="science"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_btn_bg">
+            </Button>
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btn_6"
+                android:text="sports"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_btn_bg">
+            </Button>
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btn_7"
+                android:text="technology"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_btn_bg">
+            </Button>
+        </LinearLayout>
+    </HorizontalScrollView>
+
 
     <ProgressBar
         android:id="@+id/paginationProgressBar"
